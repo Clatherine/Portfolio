@@ -1,26 +1,34 @@
+import pdf from '../../public/CatherinePulmanCV.pdf'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFile } from "@fortawesome/free-solid-svg-icons"
+
 function SkillsAndEducation(){
     return (
-        <section>
-            <h2> Skills and Education</h2>
+        <section id="skills_ed">
+            <h2 id="skillsAndEdHeader"> SKILLS & EDUCATION
+            </h2>
             <div id="skillsAndEd">
                 <section>
                     <h3>Skills</h3>
                     <ul> 
-                    <li>Languages: JavaScript, using Node.js and browsers as environment</li>
-                    <li>Testing: TDD, Jest, Supertest</li>
-                    <li>Back-end: SQL, PSQL, seeding, migrations</li>
-                    <li>Front-end: HTML, CSS, React</li>
-                    <li>Hosting: Supabase, Render, Netlify</li>
-                    <li>Other: Paired programming, technical communication, Agile and SCRUM methodologies, Wireframing, Figma</li>
+                    <li><span className="bolded">Languages:</span> JavaScript, using Node.js and browsers as environment</li>
+                    <li><span className="bolded">Testing:</span> TDD, Jest, Supertest</li>
+                    <li><span className="bolded">Back-end:</span> SQL, PSQL, seeding, migrations</li>
+                    <li><span className="bolded">Front-end:</span> HTML, CSS, React, React Native</li>
+                    <li><span className="bolded">Hosting:</span> Supabase, Render, Netlify</li>
+                    <li><span className="bolded">Other:</span> Paired programming, technical communication, Agile and SCRUM methodologies, Wireframing, Figma</li>
                     </ul>
                 </section>
-                <section>
-                    <h3>Education</h3>
-                    <ul> 
-                        <li>NorthCoders 3-month intensive Full-stack Software Development Bootcamp: April to July 2024</li>
-                        <li>The Odin Project Software Development Course: April 2024 - ongoing</li>
-                        <li>BA (Hons) Natural Sciences, University of Cambridge: 1st (2013) </li>
-                    </ul>
+                <section id="education_section">
+                    <div><h3>Education</h3></div>
+                    <div id="education_div"><ul> 
+                        <li><span className="bolded">Northcoders  Full-stack Software Development Bootcamp:</span> April to July 2024</li>
+             
+                        <li><span className="bolded">BA (Hons) Natural Sciences, University of Cambridge:</span> 1st (2013) </li>
+                      
+                    </ul>  <a id="cv" href={pdf} target = "_blank" rel="noopener noreferrer"><p>Download CV </p>
+               <FontAwesomeIcon id="cv_icon"icon={faFile} size="4x"/></a>
+               </div>
                 </section>
             </div>
             

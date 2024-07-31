@@ -1,16 +1,72 @@
-function ContactMe(){
-return (
-    <section>
-        <h2> Contact me!</h2>
-        <form>
-            <label>Your name: <input type="text"/></label><br></br>
-            <label>Your e-mail: <input type="text"/></label><br></br>
-            <label>Your message: <input type="text"/></label><br></br>
-            <button>Submit</button>
-        </form>
-    </section>
-)
+import React, { useRef } from "react";
+import { useState } from "react";
 
+function ContactMe() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const formRef = useRef(null);
+
+  const handleSubmit = () => {
+    console.log("form submitted");
+    setSubmitted(true);
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+  return (
+    <section id="contact_section">
+      <h2> CONTACT ME</h2>
+      <p>
+        Please get in touch if you have any questions or if you have a project
+        or work idea you'd like to discuss.
+      </p>
+
+      <form
+        ref={formRef}
+        id="contact_form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
+        <div id="inputs">
+          <div id="name_email">
+            <input
+              type="hidden"
+              name="access_key"
+              value="ce6d5c55-531a-480c-8739-748db65b8e91"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              className="contact-inputs"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              className="contact-inputs"
+              required
+            />
+          </div>
+
+          <textarea
+            name="message"
+            placeholder="Your message"
+            type="text"
+            className="contact-inputs message"
+            required
+          />
+        </div>
+        <div id="submit_button_div">
+          <button type="submit">Submit</button>
+          {submitted ? <p>Message submitted!</p> : null}
+        </div>
+      </form>
+    </section>
+  );
 }
 
-export default ContactMe
+export default ContactMe;

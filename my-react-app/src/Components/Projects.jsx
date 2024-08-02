@@ -38,7 +38,7 @@ return(
 <div className ="project_box_div text"><h3>Atworth History Group</h3> <p>I made this site for my local History Group, who needed their website updating. It is a fully-responsive Front-End-only React web app, and makes use of React-bootstrap components.</p>
 <div className = "tools"><p>JavaScript</p><p>React</p><p>React Bootstrap</p><p>GitHub</p><p>Git</p><p>Node.js</p><p>Netlify</p></div>
 <div className="buttons"><a href="https://66a147a3ae90d61eb74c35c6--atworthhistorygroup.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visit site - remember to update this</button></a>
-<a href="https://github.com/Clatherine/Atworth_history_group" target="_blank" rel="noopener noreferrer"><button>Front-End Repo</button></a></div></div>
+<a href="https://github.com/Clatherine/Atworth_history_group" target="_blank" rel="noopener noreferrer"><button>Repo</button></a></div></div>
 </div>
 <div className = "project_box">
   <div className ="project_box_div image"><a href= "https://66a147a3ae90d61eb74c35c6--atworthhistorygroup.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -46,15 +46,15 @@ return(
 <div className ="project_box_div text"><h3>Hangman</h3> <p>My first React app - an online hangman game! Users choose letters until they complete the word or the hangman image completes and they lose. Have a play!</p>
 <div className = "tools"><p>JavaScript</p><p>React</p><p>GitHub</p><p>Git</p><p>Node.js</p><p>Netlify</p></div>
 <div className="buttons"><a href="https://hangman34.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visit site</button></a>
-<a href="https://github.com/Clatherine/Hangman" target="_blank" rel="noopener noreferrer"><button>Front-End Repo</button></a></div></div>
+<a href="https://github.com/Clatherine/Hangman" target="_blank" rel="noopener noreferrer"><button>Repo</button></a></div></div>
 </div>
 <div className = "project_box">
   <div className ="project_box_div image"><a href= "https://noughtsandcrosses3.netlify.app/" target="_blank" rel="noopener noreferrer">
-<img className="project_image" src="../../public/Noughts and Crosses.png" alt="image of Hangman site"/></a></div>
+<img className="project_image" src="../../public/Noughts&Crosses.png" alt="image of Hangman site"/></a></div>
 <div className ="project_box_div text"><h3>Noughts and Crosses</h3> <p>Another mini React project built in an evening - this time, an online Noughts and Crosses game. Two players take turns to get 3 in a row!</p>
 <div className = "tools"><p>JavaScript</p><p>React</p><p>GitHub</p><p>Git</p><p>Node.js</p><p>Netlify</p></div>
-<div className="buttons"><a href="https://noughtsandcrosses3.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visit site</button></a>
-<a href="https://github.com/Clatherine/fe-tiny-react-apps/tree/main/NoughtsAndCrosses" target="_blank" rel="noopener noreferrer"><button>Front-End Repo</button></a></div></div>
+<div className="buttons"><a href="https://noughts-crosses-10.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visit site</button></a>
+<a href="https://github.com/Clatherine/Noughts-Crosses/tree/main/Noughts-Crosses" target="_blank" rel="noopener noreferrer"><button>Repo</button></a></div></div>
 </div>
     </div>
   

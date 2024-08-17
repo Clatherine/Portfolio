@@ -9,8 +9,6 @@
   text-align: center;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +30,7 @@ li{
   width:100%;
   margin: 0px;
   padding: 40px;
-  background-color: rgb(250, 11, 11);
+  background-color: rgb(253, 76, 76);
 display: flex;
 justify-content: space-between;
 box-sizing: border-box;
@@ -40,7 +38,7 @@ font-size: 20px;
 }
 
 #footer {
-  padding: 20px 40px
+  padding: 40px 40px
 }
 
 @media (max-width: 1000px) {
@@ -64,7 +62,7 @@ font-size: 20px;
 
 #header .navbar-brand {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
 }
 #header .nav-link{
   color: rgb(253, 208, 208)
@@ -83,8 +81,7 @@ font-size: 20px;
   padding: 20px 10px 40px 0px
   }
 #aboutMe_div {
-  /* padding: 190px 50px 0px 50px; */
-  padding: 00px 50px 0px 50px;
+  padding: 00px 30px 0px 30px;
   margin: 0 auto;
 
 
@@ -101,7 +98,7 @@ text-align: center;
 }
 
 #aboutMeText{
-  max-width: 600px;
+  max-width: 900px;
  padding: 20px;
   border-radius: 25px;
   color: grey;
@@ -109,7 +106,7 @@ text-align: center;
 
 
 #aboutMe_whole h2::after{
-  background-color: rgb(250, 11, 11);
+  background-color: rgb(253, 76, 76);
   display: block;
   border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
@@ -129,7 +126,9 @@ color: black;
   justify-content: right;
   align-items: flex-end;
 }
-
+#cv:hover {
+  background-color: rgb(253, 76, 76);
+}
 #cv p {
   display: flex;
   flex: 1;
@@ -146,7 +145,7 @@ margin: 0
 }
 
 #skills_ed h2::after{
-  background-color: rgb(34, 107, 8);
+  background-color: rgb(1, 176, 1);
   display: block;
   border-bottom-left-radius: 5px;
 border-bottom-right-radius: 5px;
@@ -158,10 +157,7 @@ height: 10px;
 margin: 10px auto 0;
 }
 
-#skillsAndEdHeader {
-  /* color: rgb(63, 64, 65);
-  color: rgb(44, 46, 49); */
-}
+
 #skillsAndEd {
   gap: 30px;
  padding:25px 50px 25px 50px;
@@ -255,6 +251,7 @@ flex: 1.5
   width: 100%;
   height: auto;
   max-height: 300px;
+  max-width: 500px;
   min-width: 350px;
   margin: 0 auto;
 }
@@ -300,10 +297,9 @@ flex: 1.5
 }
 .buttons button {
   flex: 1;
-  border-color: rgb(250, 11, 11);
   border-width: 4px;
   background-color: rgb(249, 171, 171);
-
+  border-color: rgb(253, 76, 76);
 }
 .buttons button:hover {
   border-color: #646cff;
@@ -320,9 +316,7 @@ hr {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-#contact_section {
- 
-}
+
 #contact_section p {
   font-weight:300;
 }
@@ -347,11 +341,14 @@ hr {
 }
 #submit_button_div {
   display: flex;
-
 flex-direction: column;
 }
+#submit_button_div button:hover{
+  background-color: rgb(253, 76, 76);
+}
+
 #contact_section {
-  margin: 30px
+  margin: 30px 30px 50px 
 }
 #contactMe_div h2::after{
   background-color: rgb(1, 176, 1);

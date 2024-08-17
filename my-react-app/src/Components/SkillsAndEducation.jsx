@@ -11,12 +11,12 @@ function SkillsAndEducation(){
                 <section>
                     <h3>Skills</h3>
                     <ul> 
-                    <li><span className="bolded">Languages:</span> JavaScript, using Node.js and browsers as environment</li>
+                    <li><span className="bolded">Languages:</span> JavaScript, using Node.js and browsers as environment, HTML, CSS</li>
                     <li><span className="bolded">Testing:</span> TDD, Jest, Supertest</li>
                     <li><span className="bolded">Back-end:</span> SQL, PSQL, seeding, migrations</li>
-                    <li><span className="bolded">Front-end:</span> HTML, CSS, React, React Native</li>
+                    <li><span className="bolded">Front-end:</span> HTML, CSS, React, React Native, Next.js</li>
                     <li><span className="bolded">Hosting:</span> Supabase, Render, Netlify</li>
-                    <li><span className="bolded">Other:</span> Paired programming, technical communication, Agile and SCRUM methodologies, Wireframing, Figma</li>
+                    <li><span className="bolded">Other:</span> Git, GitHub, GitLab, Paired programming, technical communication, Agile and SCRUM methodologies, Wireframing, Figma</li>
                     </ul>
                 </section>
                 <section id="education_section">

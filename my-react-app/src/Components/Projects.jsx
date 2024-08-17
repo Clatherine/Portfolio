@@ -49,7 +49,7 @@ return(
 <a href="https://github.com/Clatherine/Hangman" target="_blank" rel="noopener noreferrer"><button>Repo</button></a></div></div>
 </div>
 <div className = "project_box">
-  <div className ="project_box_div image"><a href= "https://noughtsandcrosses3.netlify.app/" target="_blank" rel="noopener noreferrer">
+  <div className ="project_box_div image"><a href= "https://noughts-crosses-10.netlify.app/" target="_blank" rel="noopener noreferrer">
 <img className="project_image" src="Noughts&Crosses.png" alt="image of Hangman site"/></a></div>
 <div className ="project_box_div text"><h3>Noughts and Crosses</h3> <p>Another mini React project built in a day - this time, an online Noughts and Crosses game. Two players take turns to get 3 in a row!</p>
 <div className = "tools"><p>JavaScript</p><p>React</p><p>GitHub</p><p>Git</p><p>Node.js</p><p>Netlify</p></div>

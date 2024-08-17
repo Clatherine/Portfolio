@@ -1,4 +1,4 @@
-import pdf from '../../public/CatherinePulmanCV.pdf'
+import pdf from '../../public/CatherinePulmanCV2024.pdf'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFile } from "@fortawesome/free-solid-svg-icons"
 

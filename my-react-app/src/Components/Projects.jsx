@@ -26,7 +26,7 @@ return(
 
 <div className = "project_box">
   <div className ="project_box_div image"><a href= "https://hot-off-the-press-news.netlify.app/" target="_blank" rel="noopener noreferrer">
-<img className="project_image" src="Hot off the Press News.png" alt="image of Hot Off the Press News site"/></a></div>
+<img className="project_image" src="HotOffthePressNews.png" alt="image of Hot Off the Press News site"/></a></div>
 <div className ="project_box_div text"><h3>Hot Off The Press News</h3>   <p>Hot Off The Press News is my first solo full-stack web app.</p> <p>Built using React, this site allows users to browse, read, vote and comment on news articles. Users can filter articles by topic, and sort results by date, number of comments or number of votes. Please note that the API may take a few minutes to start working, so please be patient!</p>
 <div className = "tools"><p>JavaScript</p><p>React</p><p>Jest</p><p>SuperTest</p><p>PostgreSQL</p><p>Supabase</p><p>Render</p><p>GitHub</p><p>Git</p><p>Node.js</p><p>Netlify</p></div>
 <div className="buttons"><a href="https://hot-off-the-press-news.netlify.app/" target="_blank" rel="noopener noreferrer"><button>Visit site</button></a>

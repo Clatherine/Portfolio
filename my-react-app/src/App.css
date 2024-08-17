@@ -123,11 +123,12 @@ margin: 10px auto 0;
   flex: 1;
 font-weight: bold;
 color: black;
-  justify-content: right;
   align-items: flex-end;
 }
-#cv:hover {
-  background-color: rgb(253, 76, 76);
+
+
+#cv:hover{
+  color: rgb(1, 176, 1);
 }
 #cv p {
   display: flex;
@@ -161,6 +162,16 @@ margin: 10px auto 0;
 #skillsAndEd {
   gap: 30px;
  padding:25px 50px 25px 50px;
+ margin:0px;
+  display: flex;
+  font-weight: normal
+}
+
+@media (max-width: 700px) {
+  #skillsAndEd {
+    flex-direction: column
+  }
+
 }
 
 #skillsAndEd ul {
@@ -185,7 +196,7 @@ margin: 10px auto 0;
   font-weight: bold;
 }
 
-#skillsAndEd, #projectBox{
+#projectBox{
   margin:0px;
   display: flex;
   font-weight: normal

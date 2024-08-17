@@ -1,9 +1,3 @@
-import { Nav } from "react-bootstrap"
-import pdf from '../../public/CatherinePulmanCV.pdf'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFile } from "@fortawesome/free-solid-svg-icons"
-
-
 function AboutMe (){
 
     

@@ -34,11 +34,10 @@ li {
   background-color: rgb(253, 76, 76);
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   font-size: 20px;
 }
 #header {
-  padding: 50px
+  padding: 50px;
 }
 #footer {
   padding: 40px 40px;
@@ -50,26 +49,57 @@ li {
 }
 @media (max-width: 1000px) {
   #header {
-    min-width: 0;
+    padding: 20px 40px
+  }
+  #myName {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding: 20px;
-    gap: 20px;
-    flex-direction: column;
+    flex-wrap: flex;
   }
 
   #header_links .nav-link {
     margin-left: 5px;
     font-size: 14px;
   }
- 
+
   #socials {
     gap: 20px;
   }
+  .navbar-brand {
+    display: flex;
+    font-size: 2em
+
+  }
 }
+@media (max-width: 500px) {
+
+
+  #myName {
+    flex-direction: column;
+  }
+
+  #myName .toggle-custom {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 10px 0
+  }
+  #myName .toggle-custom:hover {
+    background-color: pink;
+    border: yellow solid
+  }
+  #aboutMe_whole {
+    margin-top: 190px
+  }
+}
+
+
 @media (max-width: 800px) {
-#footer {
-  padding: 20px;
-}}
+  #footer {
+    padding: 20px;
+  }
+}
 
 #header .navbar-brand {
   font-weight: bold;
@@ -391,13 +421,13 @@ hr {
 
 .contact-inputs {
   display: flex;
- width: 100%;
- min-width: 320px;
- max-width: 450px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 450px;
   height: 50px;
   border: none;
   outline: none;
- padding: 25px;
+  padding: 25px;
   font-weight: 500;
   border-radius: 50px;
 }
@@ -413,7 +443,7 @@ hr {
   display: flex;
   padding-top: 15px;
   border-radius: 20px;
-  flex: 1
+  flex: 1;
 }
 
 #contact_form button {
@@ -423,7 +453,7 @@ hr {
   cursor: pointer;
   padding: 15px 40px;
 }
-#contact_form button:hover{
+#contact_form button:hover {
   background-color: rgb(69, 209, 69);
 }
 

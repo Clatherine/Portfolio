@@ -42,7 +42,7 @@ function Header({ setHeaderHeight }) {
 
   return (
     <section>
-      {windowWidth > 800 && (
+      {windowWidth > 1000 && (
         <Navbar id="header" ref={headerRef} fixed="top" data-bs-theme="dark">
           <div>
             <Navbar.Brand href="#home">CATHERINE PULMAN</Navbar.Brand>
@@ -77,9 +77,9 @@ function Header({ setHeaderHeight }) {
           </div>
         </Navbar>
       )}
-      {windowWidth <= 800 && (
-        <Navbar id="header" ref={headerRef} fixed="top" data-bs-theme="dark">
-          <div>
+      {windowWidth <= 1000 && (
+        <Navbar id="header" ref={headerRef} fixed="top" data-bs-theme="dark" expand='lg'>
+          <div id="myName">
             <Navbar.Brand href="#home">CATHERINE PULMAN</Navbar.Brand>
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"

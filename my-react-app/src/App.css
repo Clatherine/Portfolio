@@ -1,8 +1,8 @@
 #root {
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
   justify-content: center;
   align-content: center;
@@ -14,194 +14,194 @@ html {
 }
 
 body {
-  background-color:rgb(213, 213, 237);
+  background-color: rgb(213, 213, 237);
 }
 
-li{
- list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 #whole_page {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+  min-width: 350px;
 }
 
-#header, #footer {
-  width:100%;
-  margin: 0px;
-  padding: 40px;
-  background-color: rgb(253, 76, 76);
-display: flex;
-justify-content: space-between;
-box-sizing: border-box;
-font-size: 20px;
-}
-
+#header,
 #footer {
-  padding: 40px 40px
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(253, 76, 76);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 20px;
 }
-
+#header {
+  padding: 50px
+}
+#footer {
+  padding: 40px 40px;
+}
+#socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
 @media (max-width: 1000px) {
   #header {
     min-width: 0;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     gap: 20px;
     flex-direction: column;
   }
 
-
   #header_links .nav-link {
-    margin-left: 5px; 
-    font-size: 14px; 
+    margin-left: 5px;
+    font-size: 14px;
   }
-
-
+ 
+  #socials {
+    gap: 20px;
+  }
 }
-
+@media (max-width: 800px) {
+#footer {
+  padding: 20px;
+}}
 
 #header .navbar-brand {
   font-weight: bold;
   font-size: 35px;
 }
-#header .nav-link{
-  color: rgb(253, 208, 208)
+#header .nav-link {
+  color: rgb(253, 208, 208);
 }
 #header .nav-link:hover {
-  color: ghostwhite
+  color: ghostwhite;
 }
 
 #mainBody {
   display: flex;
   flex-direction: column;
-  /* margin: 190px 0px 0px 0px; */
   margin-top: var(--header-height);
 }
 .mainDiv {
-  padding: 20px 10px 40px 0px
-  }
-#aboutMe_div {
-  padding: 00px 30px 0px 30px;
-  margin: 0 auto;
-
-
+  padding: 40px 10px 40px 0px;
 }
-#aboutMe_section{
-display: flex;
-align-content: center;
-text-align: center;
+#aboutMe_div {
+  padding: 0px 30px 0px 30px;
+  margin: 0 auto;
+}
+#aboutMe_section {
+  display: flex;
+  align-content: center;
+  text-align: center;
 }
 
 #aboutMe_whole {
- padding: 45px 0px;
-
+  padding: 30px 0px;
 }
 
-#aboutMeText{
+#aboutMeText {
   max-width: 900px;
- padding: 20px;
+  padding: 20px;
   border-radius: 25px;
   color: grey;
 }
 
-
-#aboutMe_whole h2::after{
+#aboutMe_whole h2::after {
   background-color: rgb(253, 76, 76);
   display: block;
   border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-content: "";
-width: 150px;
-height: 10px;
-margin: 10px auto 0;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  content: "";
+  width: 150px;
+  height: 10px;
+  margin: 10px auto 0;
 }
 #cv {
   display: flex;
   gap: 20px;
   flex: 1;
-font-weight: bold;
-color: black;
+  font-weight: bold;
+  color: black;
   align-items: flex-end;
 }
 
-
-#cv:hover{
+#cv:hover {
   color: rgb(1, 176, 1);
 }
 #cv p {
   display: flex;
   flex: 1;
-justify-content: right;
-margin: 0
+  justify-content: right;
+  margin: 0;
 }
 
-
-#skills_ed_div{
+#skills_ed_div {
   text-align: left;
   justify-content: center;
-  background-color:  rgb(196, 245, 197);
-  border: rgb(196, 245, 197); 
+  background-color: rgb(196, 245, 197);
+  border: rgb(196, 245, 197);
 }
 
-#skills_ed h2::after{
+#skills_ed h2::after {
   background-color: rgb(1, 176, 1);
   display: block;
   border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-content: "";
-width: 150px;
-height: 10px;
-margin: 10px auto 0;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  content: "";
+  width: 150px;
+  height: 10px;
+  margin: 10px auto 0;
 }
-
 
 #skillsAndEd {
   gap: 30px;
- padding:25px 50px 25px 50px;
- margin:0px;
+  padding: 30px 50px 30px 50px;
+  margin: 0px;
   display: flex;
-  font-weight: normal
+  font-weight: normal;
 }
 
 @media (max-width: 700px) {
   #skillsAndEd {
-    flex-direction: column
+    flex-direction: column;
   }
-
 }
 
 #skillsAndEd ul {
   background-color: white;
   padding: 10px;
-  border-radius: 2px; 
+  border-radius: 2px;
   box-shadow: 10px 10px 0px hsl(0deg 0% 0% / 2);
-  border-color:
-
+  border-color: ;
 }
 #education_section {
   display: flex;
   flex-direction: column;
 }
 
-#education_div{
+#education_div {
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
 }
 .bolded {
   font-weight: bold;
 }
 
-#projectBox{
-  margin:0px;
+#projectBox {
+  margin: 0px;
   display: flex;
-  font-weight: normal
+  font-weight: normal;
 }
-
 
 #projects_container {
   display: flex;
@@ -218,7 +218,7 @@ margin: 10px auto 0;
 
 @media (max-width: 1000px) {
   .project_box {
-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -226,19 +226,18 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   padding: 10px;
-margin: 0 auto
+  margin: 0 auto;
 }
 
 .image {
   max-width: 600px;
   width: 100%;
   height: auto;
-flex: 1;
+  flex: 1;
   justify-content: center;
-
 }
 .text {
-flex: 1.5
+  flex: 1.5;
 }
 .text h3 {
   text-align: center;
@@ -249,11 +248,10 @@ flex: 1.5
 }
 @media (max-width: 800px) {
   .text {
- 
     width: 100%;
-   }
+  }
 }
-.project_box_div img{
+.project_box_div img {
   display: flex;
   flex: 1;
   object-fit: contain;
@@ -268,18 +266,17 @@ flex: 1.5
 }
 @media (max-width: 800px) {
   .project_box_div img {
-  width:100%;
-  height: auto;
+    width: 100%;
+    height: auto;
     min-width: 10px;
-    max-width:400px
-   }
+    max-width: 400px;
+  }
 }
 
 .project_box_div h3 {
   font-weight: 800;
   margin-bottom: 20px;
   font-size: 30px;
-
 }
 .project_box_div p {
   font-weight: 400;
@@ -297,30 +294,36 @@ flex: 1.5
   border-radius: 10px;
   padding: 5px;
   line-height: 1.2;
-  margin: 0
+  margin: 0;
 }
 .buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px
+  margin: 20px;
 }
 .buttons button {
   flex: 1;
   border-width: 4px;
   background-color: rgb(249, 171, 171);
   border-color: rgb(253, 76, 76);
+  color: black;
 }
 .buttons button:hover {
   border-color: #646cff;
   background-color: #e3e3e3;
 }
 
+@media (max-width: 1000px) {
+  .buttons button {
+    padding: 6px;
+  }
+}
+
 hr {
   background-color: rgb(0, 255, 8);
   height: 20px;
-
 }
 #contactMe_div {
   background-color: rgb(196, 245, 197);
@@ -329,113 +332,123 @@ hr {
 }
 
 #contact_section p {
-  font-weight:300;
+  font-weight: 300;
 }
 #contact_form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-
-
+  padding: 20px;
+  margin: 0px auto;
 }
+
 #inputs {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
+  margin: 0 auto;
+  flex: 1;
+  width: 100%;
 }
-#name_email{
+#name_email {
   display: flex;
+  flex: 1;
   gap: 20px;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  max-width: 450px;
 }
+
 #submit_button_div {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
-#submit_button_div button:hover{
+#submit_button_div button:hover {
   background-color: rgb(253, 76, 76);
 }
 
 #contact_section {
-  margin: 30px 30px 50px 
+  margin: 30px 30px 50px;
 }
-#contactMe_div h2::after{
+
+#contactMe_div h2::after {
   background-color: rgb(1, 176, 1);
   display: block;
   border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-content: "";
-width: 150px;
-height: 10px;
-margin: 10px auto 0;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  content: "";
+  width: 150px;
+  height: 10px;
+  margin: 10px auto 0;
 }
 
 .contact-inputs {
   display: flex;
-  width: 400px;
+ width: 100%;
+ min-width: 320px;
+ max-width: 450px;
   height: 50px;
   border: none;
   outline: none;
-  padding-left: 25px;
+ padding: 25px;
   font-weight: 500;
   border-radius: 50px;
- 
 }
 
 .contact-inputs:focus {
-  border: 1.5px solid black
+  border: 1.5px solid black;
 }
-.contact-inputs::placeholder{
-  color: grey
+.contact-inputs::placeholder {
+  color: grey;
 }
-.message {
-  height: 140px; 
-  min-width: 400px;
+#message {
+  height: 200px;
   display: flex;
-  flex-grow: 1;
-  padding-top:15px;
-  border-radius: 20px
+  padding-top: 15px;
+  border-radius: 20px;
+  flex: 1
 }
 
 #contact_form button {
- border: none ;background-color: rgb(1, 176, 1);
- color: white;
- cursor: pointer;
- padding: 15px 40px
+  border: none;
+  background-color: rgb(1, 176, 1);
+  color: white;
+  cursor: pointer;
+  padding: 15px 40px;
 }
+#contact_form button:hover{
+  background-color: rgb(69, 209, 69);
+}
+
 .footerDiv {
   display: flex;
 }
-#socials {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
 
-}
 #footer a {
-  color: rgb(253, 208, 208)
+  color: rgb(253, 208, 208);
 }
 #footer a:hover {
-  color: ghostwhite
+  color: ghostwhite;
 }
 
-#footer .nav-link{
-  color: rgb(253, 208, 208)
+#footer .nav-link {
+  color: rgb(253, 208, 208);
 }
-#footer .nav-link:hover{
-  color: ghostwhite
+#footer .nav-link:hover {
+  color: ghostwhite;
 }
-#back_to_top, #socials {
-
+#back_to_top,
+#socials {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}  
-
-
+}

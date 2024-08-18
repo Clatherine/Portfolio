@@ -17,8 +17,7 @@ function ContactMe() {
     <section id="contact_section">
       <h2> CONTACT ME</h2>
       <p>
-        Please get in touch if you have any questions or if you have a project
-        or work idea you'd like to discuss.
+        Please get in touch if you have any questions, suggestions, or ideas you'd like to discuss.
       </p>
 
       <form
@@ -56,7 +55,8 @@ function ContactMe() {
             name="message"
             placeholder="Your message"
             type="text"
-            className="contact-inputs message"
+            className="contact-inputs"
+            id="message"
             required
           />
         </div>

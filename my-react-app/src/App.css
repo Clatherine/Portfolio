@@ -11,10 +11,12 @@
 
 html {
   scroll-behavior: smooth;
+  --header-height: 0px;
 }
 
 body {
   background-color: rgb(213, 213, 237);
+  transition: margin-top 0.3s ease;
 }
 
 li {
@@ -48,8 +50,11 @@ li {
   gap: 30px;
 }
 @media (max-width: 1000px) {
+  .navbar-collapse {
+    transition: height 0.3s ease;
+  }
   #header {
-    padding: 20px 40px
+    padding: 20px 40px;
   }
   #myName {
     display: flex;
@@ -68,32 +73,39 @@ li {
   }
   .navbar-brand {
     display: flex;
-    font-size: 2em
-
+    font-size: 2em;
   }
-}
-@media (max-width: 500px) {
-
-
-  #myName {
-    flex-direction: column;
-  }
-
   #myName .toggle-custom {
     justify-content: center;
     align-items: center;
     align-self: center;
-    margin: 10px 0
+    margin: 10px 0;
   }
   #myName .toggle-custom:hover {
     background-color: pink;
-    border: yellow solid
+    border-color: rgb(253, 76, 76);
   }
-  #aboutMe_whole {
-    margin-top: 190px
+
+  #myName {
+    align-items: center;
+  }
+  #myName .navbar-brand p {
+    margin: 0 auto;
+  }
+
+}
+@media (max-width: 500px) {
+  #header {
+    padding: 10px 30px;
+  }
+  #myName .navbar-brand p {
+    font-size: 25px;
+  }
+  #myName .toggle-custom {
+    width: 40px;
+    padding: 3px 0px;
   }
 }
-
 
 @media (max-width: 800px) {
   #footer {
@@ -115,23 +127,23 @@ li {
 #mainBody {
   display: flex;
   flex-direction: column;
+  transition: margin-top 0.3s ease;
   margin-top: var(--header-height);
 }
+
+
+
 .mainDiv {
   padding: 40px 10px 40px 0px;
 }
 #aboutMe_div {
-  padding: 0px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
   margin: 0 auto;
 }
 #aboutMe_section {
   display: flex;
   align-content: center;
   text-align: center;
-}
-
-#aboutMe_whole {
-  padding: 30px 0px;
 }
 
 #aboutMeText {
@@ -336,7 +348,7 @@ li {
 .buttons button {
   flex: 1;
   border-width: 4px;
-  background-color: rgb(249, 171, 171);
+  background-color: pink;
   border-color: rgb(253, 76, 76);
   color: black;
 }

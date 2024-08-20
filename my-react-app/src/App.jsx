@@ -1,4 +1,4 @@
-import { useState , useEffect, useRef} from 'react'
+import { useState , useEffect, useRef, useLayoutEffect} from 'react'
 import './App.css'
 import Header from './Components/Header'
 import AboutMe from './Components/AboutMe'
@@ -8,12 +8,13 @@ import ContactMe from './Components/ContactMe'
 import Footer from './Components/Footer'
 
 function App() {
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState('150px');
   const [isToggleOpen, setIsToggleOpen] = useState(false)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const headerRef = useRef(null);
 
   useEffect(() => {
+    console.log(headerHeight, 'headerHeight')
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -25,14 +26,19 @@ function App() {
     };
   }, []); 
 
-  useEffect(() => {
-    console.log('top useEffect triggered')
-    console.log(headerRef.current, 'headderRefcurrent')
-    if (headerRef.current) {
-      console.log('headerRef.current:', headerRef.current.offsetHeight);
-      setHeaderHeight(headerRef.current.offsetHeight);
+  useLayoutEffect(() => {
+
+    if(windowWidth<1000){
+      setHeaderHeight(80)
     }
-  }, [isToggleOpen, windowWidth]);
+    if(windowWidth>=1000){
+setHeaderHeight(130)
+    }
+    // if (headerRef.current) {
+    //   setHeaderHeight(headerRef.current.offsetHeight);
+    // }
+    // console.log(headerHeight, 'headerHeight')
+  }, [ windowWidth, isToggleOpen]);
 
   useEffect(() => {
     const handleHeaderHeight = () => {
@@ -49,10 +55,8 @@ function App() {
   return (
     <div id="whole_page">
     <Header setHeaderHeight={setHeaderHeight} setIsToggleOpen={setIsToggleOpen} isToggleOpen={isToggleOpen} windowWidth={windowWidth} setWindowWidth={setWindowWidth} ref={headerRef}/>
-
-
     <section id="mainBody" style={{ marginTop: headerHeight }}>
-    <div id="aboutMe_div" className="mainDiv"><AboutMe/></div>
+    <div id="aboutMe_div"  className="mainDiv"><AboutMe/></div>
     <div id="skills_ed_div" className="mainDiv"> <SkillsAndEducation/></div>
     <div id="projects_div" className="mainDiv"> <Projects/></div>
     <div id="contactMe_div" className="mainDiv"><ContactMe/></div>

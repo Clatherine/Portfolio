@@ -1,7 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap";
 import React, {useRef, useEffect, useState, forwardRef } from "react";
 
-const Header = React.forwardRef(({ setHeaderHeight, setIsToggleOpen, isToggleOpen, windowWidth, setWindowWidth }, ref) => {
+const Header = React.forwardRef(({ setHeaderHeight, setIsToggleOpen, isToggleOpen, windowWidth}, ref) => {
  
 
   const handleNavClick = (event, targetId) => {

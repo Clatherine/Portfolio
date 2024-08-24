@@ -178,9 +178,7 @@ function Projects() {
             <p>
               I made this site for my local History Group, who needed their
               website updating. It is a fully-responsive Front-End-only React
-              web app, and makes use of React-bootstrap components. Please note
-              the link is still a draft URL as the site is still awaiting final
-              approval.
+              web app, and makes use of React-bootstrap components. 
             </p>
             <div className="tools">
               <p>JavaScript</p>

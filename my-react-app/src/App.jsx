@@ -34,10 +34,6 @@ function App() {
     if(windowWidth>=1000){
 setHeaderHeight(130)
     }
-    // if (headerRef.current) {
-    //   setHeaderHeight(headerRef.current.offsetHeight);
-    // }
-    // console.log(headerHeight, 'headerHeight')
   }, [ windowWidth, isToggleOpen]);
 
   useEffect(() => {

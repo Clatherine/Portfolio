@@ -104,7 +104,7 @@ function Projects() {
             >
               <img
                 className="project_image"
-                src="HotOffthePressNews.png"
+                src="NC-news-image.png"
                 alt="image of Hot Off the Press News site"
               />
             </a>

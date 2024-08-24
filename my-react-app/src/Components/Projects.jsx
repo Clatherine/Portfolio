@@ -161,7 +161,7 @@ function Projects() {
         {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>Atworth History Group</h3>: null}
           <div className="project_box_div image">
             <a
-              href="https://66c0c3b04e54898ad68cedec--atworthhistorygroup.netlify.app"
+              href="https://atworthhistorygroup.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -193,7 +193,7 @@ function Projects() {
             </div>
             <div className="buttons">
               <a
-                href="https://66c0c3b04e54898ad68cedec--atworthhistorygroup.netlify.app"
+                href="https://atworthhistorygroup.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -2,12 +2,8 @@ import React, { useRef } from "react";
 import { useState } from "react";
 
 function ContactMe() {
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = () => {
-    console.log("form submitted");
-    setSubmitted(true);
-  };
+
   return (
     <section id="contact_section">
       <h2> CONTACT ME</h2>
@@ -19,7 +15,7 @@ function ContactMe() {
         id="contact_form"
         action="https://api.web3forms.com/submit"
         method="POST"
-        onSubmit={handleSubmit}
+     
       >
         <div id="inputs">
           <div id="name_email">
@@ -56,7 +52,6 @@ function ContactMe() {
         </div>
         <div id="submit_button_div">
           <button type="submit">Submit</button>
-          {submitted ? <p>Message submitted!</p> : null}
         </div>
       </form>
     </section>

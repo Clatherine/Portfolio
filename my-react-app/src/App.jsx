@@ -14,7 +14,6 @@ function App() {
   const headerRef = useRef(null);
 
   useEffect(() => {
-    console.log(headerHeight, 'headerHeight')
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };

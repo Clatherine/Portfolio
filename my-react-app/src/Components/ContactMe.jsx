@@ -2,7 +2,12 @@ import React, { useRef } from "react";
 import { useState } from "react";
 
 function ContactMe() {
-
+const handleSubmit = (event)=>{
+event.preventDefault()
+const form = event.target
+form.submit()
+form.reset()
+}
 
   return (
     <section id="contact_section">
@@ -15,18 +20,20 @@ function ContactMe() {
         id="contact_form"
         action="https://api.web3forms.com/submit"
         method="POST"
-     
+        onSubmit={handleSubmit}
       >
         <div id="inputs">
           <div id="name_email">
             <input
               type="hidden"
+            
               name="access_key"
               value="ce6d5c55-531a-480c-8739-748db65b8e91"
             />
             <input
               type="text"
               name="name"
+            
               placeholder="Your name"
               className="contact-inputs"
               required
@@ -35,6 +42,7 @@ function ContactMe() {
             <input
               type="email"
               name="email"
+
               placeholder="Your email"
               className="contact-inputs"
               required

@@ -4,14 +4,9 @@ import { useState } from "react";
 function ContactMe() {
   const [submitted, setSubmitted] = useState(false);
 
-  const formRef = useRef(null);
-
   const handleSubmit = () => {
     console.log("form submitted");
     setSubmitted(true);
-    if (formRef.current) {
-      formRef.current.reset();
-    }
   };
   return (
     <section id="contact_section">
@@ -21,7 +16,6 @@ function ContactMe() {
       </p>
 
       <form
-        ref={formRef}
         id="contact_form"
         action="https://api.web3forms.com/submit"
         method="POST"

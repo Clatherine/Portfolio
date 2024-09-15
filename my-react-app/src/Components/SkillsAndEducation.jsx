@@ -1,4 +1,4 @@
-import pdf from '../../public/CatherinePulmanCV2024.pdf'
+import pdf from '../../public/CatherinePulmanCV.pdf'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFile } from "@fortawesome/free-solid-svg-icons"
 
@@ -11,7 +11,7 @@ function SkillsAndEducation(){
                 <section>
                     <h3>Skills</h3>
                     <ul> 
-                    <li><span className="bolded">Languages:</span> JavaScript, using Node.js and browsers as environment, HTML, CSS</li>
+                    <li><span className="bolded">Languages:</span> JavaScript & TypeScript, using Node.js and browsers as environment</li>
                     <li><span className="bolded">Testing:</span> TDD, Jest, Supertest</li>
                     <li><span className="bolded">Back-end:</span> SQL, PSQL, seeding, migrations</li>
                     <li><span className="bolded">Front-end:</span> HTML, CSS, React, React Native, Next.js</li>

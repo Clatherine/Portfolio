@@ -8,7 +8,7 @@ import ContactMe from './Components/ContactMe'
 import Footer from './Components/Footer'
 
 function App() {
-  const [headerHeight, setHeaderHeight] = useState('150px');
+  const [headerHeight, setHeaderHeight] = useState('130px');
   const [isToggleOpen, setIsToggleOpen] = useState(false)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const headerRef = useRef(null);
@@ -42,7 +42,7 @@ if(windowWidth<500){
       setHeaderHeight('80px')}
     }
     else {
-setHeaderHeight('150px');
+setHeaderHeight('130px');
     }
   }, [ windowWidth, isToggleOpen]);
 

@@ -17,7 +17,11 @@ function Projects() {
       <h2> PROJECTS</h2>
       <div id="projects_container">
         <div className="project_box">
-          {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>City Explorer App</h3>: null}
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
+              City Explorer App
+            </h3>
+          ) : null}
           <div className="project_box_div image">
             <a
               href="https://city-explorer24.netlify.app/"
@@ -32,7 +36,15 @@ function Projects() {
             </a>
           </div>
           <div className="project_box_div text">
-          {windowWidth>=1000 ? <h3>City Explorer App</h3>: null}
+            {windowWidth >= 1000 ? <h3>City Explorer App</h3> : null}
+            <p>
+              <b>
+                {" "}
+                Notice! Apologies, the API service for this app is currently
+                suspended, but will be resuming at the beginning of October so
+                watch this space!{" "}
+              </b>
+            </p>
             <p>
               City Explorer is a full-stack React Native web and Android app
               that helps tourists plan their travel itineraries in major UK
@@ -95,7 +107,11 @@ function Projects() {
         </div>
 
         <div className="project_box">
-        {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>Hot Off The Press News</h3>: null}
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
+              Hot Off The Press News
+            </h3>
+          ) : null}
           <div className="project_box_div image">
             <a
               href="https://hot-off-the-press-news.netlify.app/"
@@ -110,8 +126,16 @@ function Projects() {
             </a>
           </div>
           <div className="project_box_div text">
-            {windowWidth>=1000 ? <h3>Hot Off The Press News</h3>: null}
-            <p>Hot Off The Press News is my first solo full-stack web app.</p>{" "}
+            {windowWidth >= 1000 ? <h3>Hot Off The Press News</h3> : null}
+
+            <p>
+              <b>
+                Notice! Apologies, the API service for this app is currently
+                suspended, but will be resuming at the beginning of October so
+                watch this space!{" "}
+              </b>
+            </p>
+            <p>Hot Off The Press News is my first solo full-stack web app.</p>
             <p>
               Built using React, this site allows users to browse, read, vote
               and comment on news articles. Users can filter articles by topic,
@@ -158,7 +182,11 @@ function Projects() {
           </div>
         </div>
         <div className="project_box">
-        {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>Atworth History Group</h3>: null}
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
+              Atworth History Group
+            </h3>
+          ) : null}
           <div className="project_box_div image">
             <a
               href="https://atworthhistorygroup.netlify.app/"
@@ -173,12 +201,12 @@ function Projects() {
             </a>
           </div>
           <div className="project_box_div text">
-          {windowWidth>=1000 ? <h3>Atworth History Group</h3>: null}
-            
+            {windowWidth >= 1000 ? <h3>Atworth History Group</h3> : null}
+
             <p>
               I made this site for my local History Group, who needed their
               website updating. It is a fully-responsive Front-End-only React
-              web app, and makes use of React-bootstrap components. 
+              web app, and makes use of React-bootstrap components.
             </p>
             <div className="tools">
               <p>JavaScript</p>
@@ -208,7 +236,9 @@ function Projects() {
           </div>
         </div>
         <div className="project_box">
-        {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>Hangman</h3>: null}
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>Hangman</h3>
+          ) : null}
           <div className="project_box_div image">
             <a
               href="https://hangman34.netlify.app/"
@@ -223,7 +253,7 @@ function Projects() {
             </a>
           </div>
           <div className="project_box_div text">
-          {windowWidth>=1000 ? <h3>Hangman</h3>: null}
+            {windowWidth >= 1000 ? <h3>Hangman</h3> : null}
             <p>
               My first React app - an online hangman game! Users choose letters
               until they complete the word or the hangman image completes and
@@ -256,7 +286,11 @@ function Projects() {
           </div>
         </div>
         <div className="project_box">
-        {windowWidth<1000 ? <h3 style={{fontWeight:'bold', fontSize: '30px'}}>Noughts and Crosses</h3>: null}
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
+              Noughts and Crosses
+            </h3>
+          ) : null}
           <div className="project_box_div image">
             <a
               href="https://noughts-crosses-10.netlify.app/"
@@ -271,7 +305,7 @@ function Projects() {
             </a>
           </div>
           <div className="project_box_div text">
-          {windowWidth>=1000 ? <h3>Noughts and Crosses</h3>: null}
+            {windowWidth >= 1000 ? <h3>Noughts and Crosses</h3> : null}
             <p>
               Another mini React project built in a day - this time, an online
               Noughts and Crosses game. Two players take turns to get 3 in a

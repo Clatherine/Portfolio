@@ -26,27 +26,26 @@ function App() {
   }, []); 
 
   useLayoutEffect(() => {
-
-    if(windowWidth<1000){
-      setHeaderHeight(80)
+if(windowWidth<500){
+    if(isToggleOpen){
+        setHeaderHeight('250px')
+      }
+      else{
+      setHeaderHeight('50px')}
     }
-    if(windowWidth>=1000){
-setHeaderHeight(130)
+
+   else if(windowWidth<1000){
+      if(isToggleOpen){
+        setHeaderHeight('280px')
+      }
+      else{
+      setHeaderHeight('80px')}
+    }
+    else {
+setHeaderHeight('150px');
     }
   }, [ windowWidth, isToggleOpen]);
 
-  useEffect(() => {
-    const handleHeaderHeight = () => {
-      if(isToggleOpen){
-        setHeaderHeight(280)
-      }
-      else{
-        setHeaderHeight(90)
-      }
-    };
-
-    handleHeaderHeight();
-  }, [isToggleOpen]);
   return (
     <div id="whole_page">
     <Header setHeaderHeight={setHeaderHeight} setIsToggleOpen={setIsToggleOpen} isToggleOpen={isToggleOpen} windowWidth={windowWidth} setWindowWidth={setWindowWidth} ref={headerRef}/>

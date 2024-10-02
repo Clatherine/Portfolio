@@ -38,12 +38,6 @@ function Projects() {
           <div className="project_box_div text">
             {windowWidth >= 1000 ? <h3>City Explorer App</h3> : null}
             <p>
-              <b>
-                {" "}
-                Notice! Apologies, the API service for this app is currently
-                suspended, but will be resuming at the beginning of October so
-                watch this space!{" "}
-              </b>
             </p>
             <p>
               City Explorer is a full-stack React Native web and Android app
@@ -129,11 +123,11 @@ function Projects() {
             {windowWidth >= 1000 ? <h3>Hot Off The Press News</h3> : null}
 
             <p>
-              <b>
+              {/* <b>
                 Notice! Apologies, the API service for this app is currently
                 suspended, but will be resuming at the beginning of October so
                 watch this space!{" "}
-              </b>
+              </b> */}
             </p>
             <p>Hot Off The Press News is my first solo full-stack web app.</p>
             <p>

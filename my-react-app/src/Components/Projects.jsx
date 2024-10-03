@@ -49,7 +49,7 @@ function Projects() {
               The app was built by myself and 2 other team-members during the
               final project phase of the Northcoders bootcamp. You can log in
               using the username 'madexplorer' with password 'myPassword', or
-              create your own account (no email verification needed).
+              create your own account (no email verification needed). Please be aware that the API takes a few minutes to spin up after inactivity, so please be patient!
             </p>
             <div className="tools">
               <p>JavaScript</p>

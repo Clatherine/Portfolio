@@ -19,6 +19,51 @@ function Projects() {
         <div className="project_box">
           {windowWidth < 1000 ? (
             <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
+              Library of Things petitions page
+            </h3>
+          ) : null}
+          <div className="project_box_div image">
+            <a
+              href="https://www.libraryofthings.co.uk/add-new-petition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="project_image"
+                src="LibraryOfThings.png"
+                alt="image of Library of Things page"
+              />
+            </a>
+          </div>
+          <div className="project_box_div text">
+            {windowWidth >= 1000 ? (
+              <h3>Library of Things petitions page</h3>
+            ) : null}
+            <p>In my role at Library of Things as a volunteer front-end developer, I have been working on a page that displays all the Library of Things sites and petitions on an interactive map, and allows users to initiate a petition to create a new site if a local site doesn't exist, using a Formik form.</p>
+            <p>Library of Things is a social enterprise that allows people to rent useful tools and other items rather than buying them. See if there's a site near you using the map on this page, or create a new petition if this is something you'd like to see in your area!</p>
+            <div className="tools">
+              <p>TypeScript</p>
+              <p>React</p>
+              <p>Next.js</p>
+              <p>GitLab</p>
+              <p>Git</p>
+              <p>Sass</p>
+              <p>Formik</p>
+            </div>
+            <div className="buttons">
+              <a
+                href="https://www.libraryofthings.co.uk/add-new-petition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Visit site</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project_box">
+          {windowWidth < 1000 ? (
+            <h3 style={{ fontWeight: "bold", fontSize: "30px" }}>
               City Explorer App
             </h3>
           ) : null}
@@ -37,8 +82,7 @@ function Projects() {
           </div>
           <div className="project_box_div text">
             {windowWidth >= 1000 ? <h3>City Explorer App</h3> : null}
-            <p>
-            </p>
+            <p></p>
             <p>
               City Explorer is a full-stack React Native web and Android app
               that helps tourists plan their travel itineraries in major UK
@@ -49,7 +93,9 @@ function Projects() {
               The app was built by myself and 2 other team-members during the
               final project phase of the Northcoders bootcamp. You can log in
               using the username 'madexplorer' with password 'myPassword', or
-              create your own account (no email verification needed). Please be aware that the API takes a few minutes to spin up after inactivity, so please be patient!
+              create your own account (no email verification needed). Please be
+              aware that the API takes a few minutes to spin up after
+              inactivity, so please be patient!
             </p>
             <div className="tools">
               <p>JavaScript</p>

@@ -22,33 +22,35 @@ function Projects() {
           ) : null}
           <div className="project_box_div image">
             <a
-              href="https://csaf.digital.mod.uk/"
+              href="https://demo.sapientkms.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
                 className="project_image"
-                src="CSAF.png"
-                alt="image of CSAF home page"
+                src="SapientKMS.png"
+                alt="image of Sapient KMS home page"
               />
             </a>
           </div>
           <div className="project_box_div text">
             {windowWidth >= 1000 ? (
-              <h3>Cyber Security Architecture Framework</h3>
+              <h3>Sapient Knowledge Management System</h3>
             ) : null}
             <p>
-              The Cyber Security Architecture Framework (CSAF) is a web-based
-              knowledge management platform developed for the UK Ministry of
-              Defence to provide guidance on cyber security architecture best
-              practices.
+              Sapient KMS is a web-based
+              knowledge management platform designed to streamline knowledge
+              sharing and collaboration within organisations.
             </p>
             <p>
               As one of two developers on this project, I was primarily
               responsible for the front-end development using Lit Element web
-              components, written in TypeScript. Features and functionalities that I worked on included a custom content management interface for document creation, document search capabilities and dashboards, site navigation menus, user
-              management and authentication, and admin interfaces for data
-              management and site configuration.
+              components, written in TypeScript. Features and functionalities
+              that I worked on included a custom content management interface
+              for document creation, document search capabilities and
+              dashboards, site navigation menus, user management and
+              authentication, and admin interfaces for data management and site
+              configuration.
             </p>
             <div className="tools">
               <p>TypeScript</p>
@@ -62,7 +64,7 @@ function Projects() {
             </div>
             <div className="buttons">
               <a
-                href="https://csaf.digital.mod.uk/"
+                href="https://demo.sapientkms.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

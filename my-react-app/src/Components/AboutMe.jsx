@@ -26,10 +26,7 @@ function AboutMe() {
             with a particular interest in front-end development and user
             experience design. If you are looking for a new website for your
             business, or a website refresh, please get in touch.
-            <br></br> <br></br>
-            In the meantime, please take a look at the projects I have been
-            working on below and feel free to send any questions or suggestions
-            for improvements my way. Many thanks for looking!
+          
           </p>
         </div>
       </section>

@@ -38,9 +38,9 @@ function Projects() {
               <h3>Sapient Knowledge Management System</h3>
             ) : null}
             <p>
-              Sapient KMS is a web-based
-              knowledge management platform designed to streamline knowledge
-              sharing and collaboration within organisations.
+              Sapient KMS is a web-based knowledge management platform designed
+              to streamline knowledge sharing and collaboration within
+              organisations.
             </p>
             <p>
               As one of two developers on this project, I was primarily
@@ -293,17 +293,11 @@ function Projects() {
             </h3>
           ) : null}
           <div className="project_box_div image">
-            <a
-              href="https://city-explorer24.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <img
                 className="project_image"
                 src="CityExplorer.png"
                 alt="image of City Explorer App"
               />
-            </a>
           </div>
           <div className="project_box_div text">
             {windowWidth >= 1000 ? <h3>City Explorer App</h3> : null}
@@ -312,15 +306,13 @@ function Projects() {
               City Explorer is a full-stack React Native web and Android app
               that helps tourists plan their travel itineraries in major UK
               cities. Users browse attractions according to their preferences
-              and can then view a route between their chosen attractions.
+              and can then view a route between their chosen attractions. The app was built by myself and 2 other team-members during the
+              final project phase of the Northcoders bootcamp.
             </p>
             <p>
-              The app was built by myself and 2 other team-members during the
-              final project phase of the Northcoders bootcamp. You can log in
-              using the username 'madexplorer' with password 'myPassword', or
-              create your own account (no email verification needed). Please be
-              aware that the API takes a few minutes to spin up after
-              inactivity, so please be patient!
+              Unfortunately, the live version of this project is currently
+              unavailable due to hosting budget constraints, but the source code
+              is available on GitHub.
             </p>
             <div className="tools">
               <p>JavaScript</p>
@@ -339,13 +331,6 @@ function Projects() {
               <p>Git</p>
             </div>
             <div className="buttons">
-              <a
-                href="https://city-explorer24.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button>Visit site</button>
-              </a>
               <a
                 href="https://github.com/EliR94/city-explorer-backend"
                 target="_blank"
@@ -371,35 +356,22 @@ function Projects() {
             </h3>
           ) : null}
           <div className="project_box_div image">
-            <a
-              href="https://hot-off-the-press-news.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <img
                 className="project_image"
                 src="NC-news-image.png"
                 alt="image of Hot Off the Press News site"
               />
-            </a>
           </div>
           <div className="project_box_div text">
             {windowWidth >= 1000 ? <h3>Hot Off The Press News</h3> : null}
-
-            <p>
-              {/* <b>
-                Notice! Apologies, the API service for this app is currently
-                suspended, but will be resuming at the beginning of October so
-                watch this space!{" "}
-              </b> */}
-            </p>
-            <p>Hot Off The Press News is my first solo full-stack web app.</p>
-            <p>
-              Built using React, this site allows users to browse, read, vote
+            <p>Hot Off The Press News is my first solo full-stack web app. Built using React, this site allows users to browse, read, vote
               and comment on news articles. Users can filter articles by topic,
               and sort results by date, number of comments or number of votes.
-              Please note that the API may take a few minutes to start working,
-              so please be patient!
+            </p>
+            <p>
+              Unfortunately, the live version of this project is currently
+              unavailable due to hosting budget constraints, but the source code
+              is available on GitHub.
             </p>
             <div className="tools">
               <p>JavaScript</p>
@@ -415,13 +387,6 @@ function Projects() {
               <p>Git</p>
             </div>
             <div className="buttons">
-              <a
-                href="https://hot-off-the-press-news.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button>Visit site</button>
-              </a>
               <a
                 href="https://github.com/Clatherine/be-nc-news-"
                 target="_blank"

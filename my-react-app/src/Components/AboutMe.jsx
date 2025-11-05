@@ -13,8 +13,7 @@ function AboutMe() {
             bug. This, combined with being drawn to the more technical aspects
             of a previous job in education technology, led me to take the plunge
             and sign up for the JavaScript course with Northcoders in 2024.
-            <br></br> <br></br>After graduating, I initially volunteered as a
-            front-end developer for a local social enterprise, and then secured
+            <br></br> <br></br>After completing the course, I initially volunteered as a front-end developer for a local social enterprise, and then secured
             a junior developer position working on a new knowledge management
             platform for the Ministry of Defence. In this role, I gained
             valuable experience across the full stack, from user-experience

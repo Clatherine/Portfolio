@@ -21,17 +21,17 @@ function Projects() {
             </h3>
           ) : null}
           <div className="project_box_div image">
-            {/* <a
+            <a
               href="https://demo.sapientkms.com/"
               target="_blank"
               rel="noopener noreferrer"
-            > */}
+            >
               <img
                 className="project_image"
                 src="SapientKMS.png"
                 alt="image of Sapient KMS home page"
               />
-            {/* </a> */}
+            </a>
           </div>
           <div className="project_box_div text">
             {windowWidth >= 1000 ? (
@@ -62,7 +62,7 @@ function Projects() {
               <p>GitHub</p>
               <p>Git</p>
             </div>
-            {/* <div className="buttons">
+            <div className="buttons">
               <a
                 href="https://demo.sapientkms.com/"
                 target="_blank"
@@ -70,7 +70,7 @@ function Projects() {
               >
                 <button>Visit site</button>
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="project_box">
